@@ -1,4 +1,4 @@
-# Exercício: Modelos de Serviços em Cloud
+# Exercício 7: Modelos de Serviços em Cloud
 
 Para cada um dos seguintes casos de uso, identifique o modelo de serviço em nuvem mais adequado (IaaS, PaaS, SaaS ou FaaS) e justifique sua escolha.
 
