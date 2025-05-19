@@ -1,0 +1,22 @@
+// === Arquivo: calculadora.proto ===
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.exemplo.grpc";
+option java_outer_classname = "CalculadoraProto";
+
+service Calculadora {
+  rpc Somar (Operacao) returns (Resultado);
+  rpc Subtrair (Operacao) returns (Resultado);
+  rpc Multiplicar (Operacao) returns (Resultado);
+  rpc Dividir (Operacao) returns (Resultado);
+}
+
+message Operacao {
+  int32 a = 1;
+  int32 b = 2;
+}
+
+message Resultado {
+  double valor = 1;
+}
